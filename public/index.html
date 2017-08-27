@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Chat</title>
+</head>
+
+<body>
+    <div class=" container">
+        <div class="row">
+            <!-- Chatbox Start -->
+            <div class="col s8" id="messageBox">
+                <!-- messages -->
+            </div>
+            <!-- Chatbox End -->
+
+            <!-- Form Start -->
+            <form action="#" class="col s4" id="chatForm">
+                <div class="row">
+                    <div class="col s12">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" class="input-field" id="username" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <label for="message">Message</label>
+                        <textarea name="message" class="materialize-textarea" id="message" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="submit" value="Send" class="btn">
+                    </div>
+                </div>
+            </form>
+            <!-- Form End -->
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
